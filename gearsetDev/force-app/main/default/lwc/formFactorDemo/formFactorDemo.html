@@ -1,0 +1,9 @@
+<template>
+    <lightning-button variant="brand" label="Create Account" title="Create Account" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <template if:true={showDesktopForm}>
+        <c-desktop-form></c-desktop-form>
+    </template>
+    <template if:true={showMobileForm}>
+        <c-mobile-form></c-mobile-form>
+    </template>
+</template>
